@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML overview</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+  <body>
+    <hr>
+    <div id="section1">
+      <h1>SECTION1</h1>
+    <h1>Header tag</h1>
+    <h2>Header tag</h2>
+    <h3>Header tag</h3>
+    <h4>Header tag</h4>
+    <h5>Header tag</h5>
+    <h5>Header tag</h5>
+    <hr>
+    <h1>para tag</h1>
+    <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+    <div class="">
+      <a href=""></a>
+      <p>The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</p>
+    </div>
+  </div>
+  <hr>
+    <div id="section2">
+      <h1>form tag</h1>
+      <h2>The action attribute specifies where to send the form-data when a form is submitted.</h2>
+      <p>form action is where to sent the url</p>
+      <p>In the form tag there are three types of method </p>
+      <p>get (default): The GET method; form data appended to the action URL with a ? separator. Use this method when the form has no side effects.</p>
+      <p>post-The POST method; form data sent as the request body.</p>
+
+      <form action="/action_page.php" method="get">
+
+    <label for="fname">First name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="password">password</label>
+     <input type="password" id="pin" name="pin" maxlength="4" size="4"><br>
+
+    <textarea name="review" rows="8" cols="80">have end tag in text area</textarea>
+      <input type="submit" value="Submit">
+      <input type="reset" value="reset">
+
+  </form>
+  <hr>
+
+  <input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="search">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<h2>progress element</h2>
+<label for="Downloading progress">Downloading progress</label>
+<progress value="76" max="100"></progress>
+
+    </div>
+    <hr>
+    <div class="section3">
+      <h2>select tag</h2>
+      <p> The select element is used to create a drop-down list.The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).</p>
+      <p>The id attribute is needed to associate the drop-down list with a label.</p>
+      <form class="" action="index.html" method="post">
+        <label for="cars">choose a car and bike</label>
+        <select class="" name="cars">
+          <optgroup label="cars">
+            <option value="verna">Verna</option>
+            <option value="Swift">Swift</option>
+          </optgroup>
+          <optgroup label="bike">
+            <option value="duke">duke</option>
+            <option value="MT">MT<option>
+            </optgroup>
+
+</select>
+</form>
+</div>
+<hr>
+<div id="section4">
+<h2>Table</h2>
+<table style="width:100%" border="3">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+<h3>The thead, tbody, and tfoot elements - Styled with CSS<h3>
+  <table border="3">
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+<hr>
+<div id="section5">
+  <h2>ordered list</h2>
+  <p>The HTML ol tag defines an ordered list. An ordered list can be numerical or alphabetical</p>
+  <h3>types</h3>
+  <p>Type	Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers</p>
+<ol type="1">
+  <li>coffee</li>
+  <li>tea</li>
+</ol>
+<h3>Nested ordered list</h3>
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+<hr>
+<h2>un ordered list</h2>
+<p>An unordered list starts with the ul tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles) by default:</p>
+<h3>types</h3>
+<p>
+  Value	Description
+disc:	Sets the list item marker to a bullet (default)
+circle:	Sets the list item marker to a circle
+square:	Sets the list item marker to a square
+none:	The list items will not be marked
+</p>
+<ul type="square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<hr>
+<h2>Definition list</h2>
+<h3>The dl, dd, and dt elements</h3>
+
+<p>These three elements are used to create a description list:</p>
+<dl>
+  <dt>tea</dt>
+  <dd>hot drink</dd>
+  <dt>black coffee</dt>
+  <dd>cold drink<dd>
+</dl>
+</div>
+<hr>
+<div class="section6">
+<h2>meta tag</h2>
+<p>Define keywords for search engines:
+meta name="keywords" content="HTML, CSS, JavaScript">
+Define a description of your web page:
+
+meta name="description" content="Free Web tutorials for HTML and CSS">
+Define the author of a page:
+
+meta name="author" content="John Doe">
+Refresh document every 30 seconds:
+
+meta http-equiv="refresh" content="30">
+Setting the viewport to make your website look good on all devices:
+
+meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</p>
+<hr>
+<h2>marquee</h2>
+  <marquee
+  direction="down"
+  width="250"
+  height="200"
+  behavior="alternate"
+  style="border:solid">
+  <marquee behavior="alternate"> This text will bounce </marquee>
+</marquee>
+<p>three types behavior scroll alternate slide</p>
+<hr>
+<h2>button</h2>
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+</div>
+<hr>
+<div class="">
+  <h2>Anchor tag</h2>
+  <p>_self (default): Show the result in the current browsing context.
+_blank: Show the result in a new, unnamed browsing context.
+_parent: Show the result in the parent browsing context of the current one, if the current page is inside a frame. If there is no parent, acts the same as _self.
+_top: Show the result in the topmost browsing context (the browsing context that is an ancestor of the current one and has no parent). If there is no parent, acts the same as _self.
+  </p>
+  <p>
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+<p><a href="mailto:someone@example.com">Send email</a></p></p>
+<p><a href="tel:+4733378901">+47 333 78 901</a></p
+  <a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+  <h3>image tag</h3>
+  <p><h1>Align image with CSS</h1>
+
+<h2>vertical-align: bottom</h2>
+<p>This is some text. <img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:bottom"> This is some text. This is some text. This is some text.</p>
+
+<h2>vertical-align: middle</h2>
+<p>This is some text. <img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle"> This is some text. This is some text. This is some text.</p>
+
+<h2>vertical-align: top</h2>
+<p>This is some text. <img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:top"> This is some text. This is some text. This is some text.</p>
+
+<h2>float: right</h2>
+<p>This is some text. <img src="smiley.gif" alt="Smiley face" width="42" height="42" style="float:right">This is some text. This is some text. This is some text.</p>
+
+<h2>float: left</h2>
+<p>This is some text. <img src="smiley.gif" alt="Smiley face" width="42" height="42" style="float:left">This is some text. This is some text. This is some text.</p></p>
+
+
+</div>
+  </body>
+</html>
